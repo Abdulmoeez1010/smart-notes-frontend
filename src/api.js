@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const API_BASE = "https://smart-notes-rag-assistant.onrender.com";
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://smart-notes-rag-assistant.onrender.com";
+// const API_BASE = "http://127.0.0.1:8000";
 
 export const ingestYoutube = (videoUrl) =>
   axios.post(`${API_BASE}/ingest/youtube`, { video_url: videoUrl });
